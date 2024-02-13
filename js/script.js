@@ -56,3 +56,18 @@ const teamMembers = [
         profile: "barbara-ramos-graphic-designer.jpg"
     }
 ]
+
+// stampa dell'array di oggetti su console
+for (let i = 0; i < teamMembers.length; i++) {
+
+    const currentObject = teamMembers[i];
+
+    for (let key in currentObject) {
+
+        console.log(key + ": " + currentObject[key])
+
+    }
+
+    console.log("------------------")
+
+}
