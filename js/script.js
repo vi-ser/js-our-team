@@ -62,7 +62,6 @@ const listaElement = document.querySelector("ul");
 // itero per ogni membro del team
 for (let i = 0; i < teamMembers.length; i++) {
     const currentMember = teamMembers[i];
-    let textDOM = "";
 
     // creo un elemento di lista per ogni membro del team
     let memberCard = document.createElement("li");

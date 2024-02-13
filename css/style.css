@@ -1,3 +1,20 @@
 li {
-    background-color: lightgray;
+    /* test */
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+}
+
+strong {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+}
+
+p {
+    color: grey;
 }
