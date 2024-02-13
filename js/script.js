@@ -59,22 +59,33 @@ const teamMembers = [
 
 const listaElement = document.querySelector("ul");
 
-// stampa dell'array di oggetti su console
+// itero per ogni membro del team
 for (let i = 0; i < teamMembers.length; i++) {
+    const currentMember = teamMembers[i];
+    let textDOM = "";
 
-    const currentObject = teamMembers[i];
-    let textDOM = ""
+    // creo un elemento di lista per ogni membro del team
+    let memberCard = document.createElement("li");
 
-    for (let key in currentObject) {
+    // creo un elemento img per ogni membro del team
+    let img = document.createElement("img");
+    img.src = "img/" + currentMember.profile;
 
-        console.log(key + ": " + currentObject[key])
+    // creo un elemento strong per visualizzare il nome
+    let memberName = document.createElement("strong");
+    memberName.textContent = `${currentMember.name}`;
 
-        // stampa dell'array nel DOM
-        textDOM += `${key}: ${currentObject[key]}<br>`;
-    }
+    // creo un elemento strong per visualizzare il ruolo
+    let memberRole = document.createElement("p");
+    memberRole.textContent = `${currentMember.role}`;
 
-    console.log("------------------")
-    listaElement.innerHTML += `<li>${textDOM}</li>`
+    // aggiungo le info create alla card 
+    memberCard.appendChild(img);
+    memberCard.appendChild(memberName);
+    memberCard.appendChild(memberRole);
 
-}
 
+    // aggiungo la card alla lista
+    listaElement.appendChild(memberCard);
+
+}  
