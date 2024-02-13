@@ -17,3 +17,42 @@ Prima la logica in italiano e poi traduciamo in codice.
 E ricordiamoci che console.log() è nostro amico!
 Buon lavoro!
 */
+
+// creo l'array di oggetti per rappresentare i membri del team
+const teamMembers = [
+    {
+        name: "Wayne Barnett",
+        role: "Founder & CEO",
+        profile: "wayne-barnett-founder-ceo.jpg"
+    },
+
+    {
+        name: "Angela Caroll",
+        role: "Chief Editor",
+        profile: "angela-caroll-chief-editor.jpg"
+    },
+
+    {
+        name: "Walter Gordon",
+        role: "Office Manager",
+        profile: "walter-gordon-office-manager.jpg"
+    },
+
+    {
+        name: "Angela Lopez",
+        role: "Social Media Manager",
+        profile: "angela-lopez-social-media-manager.jpg"
+    },
+
+    {
+        name: "Scott Estrada",
+        role: "Developer",
+        profile: "scott-estrada-developer.jpg"
+    },
+
+    {
+        name: "Barbara Ramos",
+        role: "Graphic Designer",
+        profile: "barbara-ramos-graphic-designer.jpg"
+    }
+]
